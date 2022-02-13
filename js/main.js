@@ -1,6 +1,6 @@
-//Show WOrdpress Tab be default (Can switch with other tabs)
+//Show Email Tab be default (Can switch with other tabs)
 function myScript(){
-	var x = document.getElementById("WordPress");
+	var x = document.getElementById("Email");
 	x.style.display="block";
 	}
 //Highlights the button link and shows the related content
