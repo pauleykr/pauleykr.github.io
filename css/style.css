@@ -370,16 +370,6 @@ background-color: #55425A; /* Green */
 	}
 } 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 934px) {
-
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1151px) {
-	
-} 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1512px) {
 
