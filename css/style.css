@@ -373,8 +373,8 @@ background-color: #55425A; /* Green */
 	float: right;
 	display:block;
 	width: 100%; 
-	padding:8%;
-	margin: 0 0% 20% 0%;	
+	padding:50%;
+	margin: 0 0% 2% 0%;	
 	-webkit-box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);  
 	box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);
 }
@@ -382,8 +382,8 @@ background-color: #55425A; /* Green */
 	display:block;
 	float: left;
 	width: 100%; 
-	padding:1%;
-	margin: 0 0% 20% 0%;
+	padding:50%;
+	margin: 0 0% 2% 0%;
 	-webkit-box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);  
 	box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);
 }
