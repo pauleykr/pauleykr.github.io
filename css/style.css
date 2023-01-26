@@ -78,22 +78,7 @@ h4{
 	margin: 5% 20% 5% 0;
 	
 }
-.rightTextSmall{
-	font-size:1em;
-	float:right;
-	width:30%;
-	text-align:center;
-	margin: 2% 22% 2% 0;
-	
-}
-.leftText{
-	font-size:1.25em;
-	float:left;
-	width:25%;
-	text-align:left;
-	margin: 2% 0% 2% 0%;
-	
-}
+
 .leftImg{
 	float:left;
 	margin: 5% 0% 5% 10%;
