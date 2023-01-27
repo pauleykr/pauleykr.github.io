@@ -1,8 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	color:#62656A;
+	  font-family: Arial, Helvetica, sans-serif;
+	  color:#62656A;
 
 }
 h1{
@@ -137,7 +137,15 @@ footer{
 footer a{
 	color:#fff;
 }
-
+.icon{
+  height:30px;
+  width:30px;
+}
+.buttonicon{
+  height:auto;
+  width:30px;
+  padding-right: 10px;
+}
 .tabSection{
 	margin: 0% 10% 0% 10%;
 	clear: both;
@@ -309,9 +317,14 @@ Change background color of buttons on hover */
 }
 
 /*Contact Button Styles*/
+.btnImgAlign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .ContactBtn {
-background-color: #55425A; /* Green */
+  background-color: #55425A; /* Green */
   border: none;
   color: #ffffff;
   padding: 16px 32px;
