@@ -345,6 +345,10 @@ Change background color of buttons on hover */
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+  .txtBlockR{width:100%;}
+  .txtBlockL{
+    width:100%;
+  }
 }
 
 
@@ -356,10 +360,14 @@ Change background color of buttons on hover */
 @media only screen and (max-width: 600px) {
 
 	.hidetxt{
-	display:none;
+	  display:none;
 	}
-
-
+  .txtBlockR{
+    width:100%;
+  }
+  .txtBlockL{
+    width:100%;
+  }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
