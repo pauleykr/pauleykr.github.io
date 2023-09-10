@@ -378,6 +378,12 @@ Change background color of buttons on hover */
   .tab button{
     font-size: 20px;
   }
+  h3{
+    font-size: 22px;
+  }
+  .mbtxt{
+    font-size: 18px;
+  }
 }
 
 
@@ -395,6 +401,12 @@ Change background color of buttons on hover */
  }
  nav a{
   display: block;
+}
+h3{
+  font-size: 24px;
+}
+.mbtxt{
+  font-size: 22px;
 }
 } 
 
