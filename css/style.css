@@ -342,38 +342,46 @@ Change background color of buttons on hover */
   background-color: #ffffff;
   color: #55425A;
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+
+
+/* Small - mobile device */
+@media only screen and (max-width: 450px) {
   .prev, .next,.text {font-size: 11px}
-  .txtBlockR{width:100%;}
-  
+  .txtBlockR{
+    width:100%;
+    clear:float;
+    margin-bottom: 32px;
+  }
+  .txtBlockL{
+    width:100%;
+    clear:float;
+    margin-bottom: 32px;
+  }
+  .bg{
+    height:30%;
+  }
 }
 
 
-
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-	.hidetxt{
-	  display:none;
-	}
-  .txtBlockR{
-    width:100%;
-  }
- 
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Medium device - Min from value and above. */
+@media only screen and (max-width: 451px) {
 .hidetxt{
 	display:block;
 	}
+  .bg{
+    height:90%;
+  }
+  
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1512px) {
+/* Large device */
+@media only screen and (max-width: 1024px) {
+  .hidetxt{
+    display:block;
+    }
+    .bg{
+      height:90%;
+    }
+    
+  } 
 
-}
