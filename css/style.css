@@ -68,7 +68,7 @@ h4 {
 .rightText {
   font-size: 1.5em;
   float: right;
-  width: 50%;
+  width: 30%;
   text-align: left;
   margin: 5% 20% 5% 0;
 }
@@ -391,7 +391,7 @@ img {
   }
   .mainTxt {
     margin: 20% 0 15% 35%;
-    padding: 5% 0 5% 5%;
+    padding: 0 0 5% 5%;
   }
   .bg {
     height: auto;
