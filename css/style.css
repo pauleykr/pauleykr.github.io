@@ -1,243 +1,259 @@
-body, html {
-    height: 100%;
-    margin: 0;
-	  font-family: Arial, Helvetica, sans-serif;
-	  color:#62656A;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #62656a;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.2;
+}
+h3 {
+  color: #55425a;
+}
+h4 {
+  color: #55425a;
+}
 
-}
-h1{
-	font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-    font-weight: 500;
-	  font-size:2em;
-    line-height: 1.2;
-
-}
-h3{
-	color: #55425A;
-}
-h4{
-	color:#55425A;
-}
-
-.linkStyle, .pBox a {
-	color:#55425A;
-	text-decoration:none;
-	font-weight:700;
+.linkStyle,
+.pBox a {
+  color: #55425a;
+  text-decoration: none;
+  font-weight: 700;
 }
 /*Header style*/
 .bg {
-    /* The image used */
-	
-    background:url("../img/ferdinand-stohr-NFs6dRTBgaM-unsplash.jpg") no-repeat 0 0;
-    /* Full height */
-	display:block;
-    height: 92%; 
-	width:100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-size: cover;
-	  position:relative;
-	  overflow:hidden;
-	
-	
+  /* The image used */
+
+  background: url("../img/BackgroundImg.jpg") no-repeat 0 0;
+  /* Full height */
+  display: block;
+  height: 92%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 /*Text Overlay on background in header*/
 
-.mainTxt{
-	margin:20% 0 25% 45%;
-	padding: 5% 0 5% 5%;
-	background-color: rgba(0,0,0, .8);
-
+.mainTxt {
+  margin: 20% 0 25% 45%;
+  padding: 5% 0 5% 5%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.mainTxt h1{
-	font-size:2.5em;
-	color:#fff;
+.mainTxt h1 {
+  font-size: 2.5em;
+  color: #fff;
 }
-
 
 /* Section Body Content*/
-.blueBox{
-	padding: 1em 0 0em 0em;
-	color:#55425A;
-	clear: both;
-	text-align:center;
-	
+.blueBox {
+  padding: 1em 0 0em 0em;
+  color: #55425a;
+  clear: both;
+  text-align: center;
 }
-.mainContent{
-	margin:0 0 5% 0 !important;
-}
-
-.rightText{
-	font-size:1.5em;
-	float:right;
-	width:30%;
-	text-align:left;
-	margin: 5% 20% 5% 0;
-	
+.mainContent {
+  margin: 0 0 5% 0 !important;
 }
 
-.leftImg{
-	float:left;
-	margin: 5% 0% 5% 10%;
-	width:25%;
+.rightText {
+  font-size: 1.5em;
+  float: right;
+  width: 30%;
+  text-align: left;
+  margin: 5% 20% 5% 0;
+}
+
+.leftImg {
+  float: left;
+  margin: 5% 0% 5% 10%;
+  width: 25%;
 }
 
 /*List code*/
-ul{
-	text-align:left;
+ul {
+  text-align: left;
 }
 
-.resumeBlock{
-	display:inline-block;
-	width:100%;
-	border-top: 3px dashed #8472a5;
+.resumeBlock {
+  display: inline-block;
+  width: 100%;
+  border-top: 3px dashed #8472a5;
 }
 /*Nav Styles*/
-nav{
-	background: #000000;
-	padding:0;
-	margin:0;
-	display:block;
-	text-align:center;
+nav {
+  background: #000000;
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
 }
 nav a {
-	text-decoration:none;
-	color:#ffffff;
-	margin:0 1em 0 1em;
-	font-size:1.5em;
-	padding:1em 1em;
-	display:inline-block;
-	
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 1em 0 1em;
+  font-size: 1.5em;
+  padding: 1em 1em;
+  display: inline-block;
 }
 
-nav a:hover{
-	background-color:#fff;
-	color:#311A4B;
+nav a:hover {
+  background-color: #fff;
+  color: #311a4b;
 }
-nav a:active{
-	background-color:#fff;
-	color:#311A4B;
+nav a:active {
+  background-color: #fff;
+  color: #311a4b;
 }
-.navAlign{
-	text-align:center;
+.navAlign {
+  text-align: center;
 }
 
 /*Footer*/
-footer{
-	background-color:#000000;
-	color:#fff;
-	padding:1em 0 1em 0;
-	margin:0;
-	display:block;
-	text-align:center;
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 1em 0 1em 0;
+  margin: 0;
+  display: block;
+  text-align: center;
 }
-footer a{
-	color:#fff;
+footer a {
+  color: #fff;
 }
-.icon{
-  height:30px;
-  width:30px;
+.icon {
+  height: 30px;
+  width: 30px;
 }
-.buttonicon{
-  height:auto;
-  width:30px;
+.buttonicon {
+  height: auto;
+  width: 30px;
   padding-right: 10px;
 }
-.tabSection{
-	margin: 0% 10% 0% 10%;
-	clear: both;
+.tabSection {
+  margin: 0% 10% 0% 10%;
+  clear: both;
 }
 
 /* Project Block stylings */
-.txtBlockL{
-	display:block;
-	float: left;
-	width: 49%; 
-	padding:1%;
-	margin: 0 0% 2% 0%;
-	-webkit-box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);  
-	box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);
+.txtBlockL {
+  display: block;
+  float: left;
+  width: 49%;
+  padding: 1%;
+  margin: 0 0% 2% 0%;
+  -webkit-box-shadow:
+    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
+    6px 4px 6px 1px #95c1c9,
+    -4px -1px 21px -5px #8472a5,
+    1px 1px 1px 1px rgba(0, 0, 0, 0);
+  box-shadow:
+    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
+    6px 4px 6px 1px #95c1c9,
+    -4px -1px 21px -5px #8472a5,
+    1px 1px 1px 1px rgba(0, 0, 0, 0);
 }
-.txtBlockR{
-	float: right;
-	display:block;
-	width: 49%; 
-	padding:1%;
-	margin: 0 0% 2% 0%;	
-	-webkit-box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);  
-	box-shadow: 3px -2px 3px 2px rgba(132,114,165,.5), 6px 4px 6px 1px #95c1c9, -4px -1px 21px -5px #8472a5, 1px 1px 1px 1px rgba(0,0,0,0);
+.txtBlockR {
+  float: right;
+  display: block;
+  width: 49%;
+  padding: 1%;
+  margin: 0 0% 2% 0%;
+  -webkit-box-shadow:
+    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
+    6px 4px 6px 1px #95c1c9,
+    -4px -1px 21px -5px #8472a5,
+    1px 1px 1px 1px rgba(0, 0, 0, 0);
+  box-shadow:
+    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
+    6px 4px 6px 1px #95c1c9,
+    -4px -1px 21px -5px #8472a5,
+    1px 1px 1px 1px rgba(0, 0, 0, 0);
 }
 
-.blockStyles{
-	float:none;
-	text-align: center;
+.blockStyles {
+  float: none;
+  text-align: center;
 }
 
-.boxImg, img{
-	width:100%;
-	height: auto;
+.boxImg,
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color:#312d61;
-	  text-align:center;
-	  margin-bottom:2em;
-
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #312d61;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
-	color:#fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 1% 5% 1% 5% ;
-    transition: 0.3s;
-    font-size: 17px;
+  background-color: inherit;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1% 5% 1% 5%;
+  transition: 0.3s;
+  font-size: 17px;
 }
 /*Tab Styles 
 Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #8472a5;
+  background-color: #8472a5;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #8472a5;
+  background-color: #8472a5;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-	margin: 0% 0% 0% 0%;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  margin: 0% 0% 0% 0%;
 }
 
 /* Slider styles*/
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
-.mySlides {display: none}
-	img {vertical-align: middle;}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  width:25%;
+  width: 25%;
   max-width: 1000px;
   position: relative;
-  float:left;
-  margin:5% 0 0 10%; 
+  float: left;
+  margin: 5% 0 0 10%;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -258,8 +274,9 @@ Change background color of buttons on hover */
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -294,7 +311,8 @@ Change background color of buttons on hover */
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -307,24 +325,32 @@ Change background color of buttons on hover */
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*Contact Button Styles*/
-.btnImgAlign{
+.btnImgAlign {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .ContactBtn {
-  background-color: #55425A; /* Green */
+  background-color: #55425a; /* Green */
   border: none;
   color: #ffffff;
   padding: 16px 32px;
@@ -336,84 +362,84 @@ Change background color of buttons on hover */
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  border:2px solid #55425A;
+  border: 2px solid #55425a;
 }
 .ContactBtn:hover {
   background-color: #ffffff;
-  color: #55425A;
+  color: #55425a;
 }
-
 
 /* Small - mobile device */
 @media only screen and (max-width: 500px) {
-  .mainTxt h1{
+  .mainTxt h1 {
     font-size: 30px;
   }
-  .prev, .next,.text {font-size: 12px}
-  .txtBlockR{
-    width:100%;
-    clear:float;
+  .prev,
+  .next,
+  .text {
+    font-size: 12px;
+  }
+  .txtBlockR {
+    width: 100%;
+    clear: float;
     margin-bottom: 32px;
   }
-  .txtBlockL{
-    width:100%;
-    clear:float;
+  .txtBlockL {
+    width: 100%;
+    clear: float;
     margin-bottom: 32px;
   }
-  .mainTxt{
-    margin:20% 0 15% 35%;
+  .mainTxt {
+    margin: 20% 0 15% 35%;
     padding: 5% 0 5% 5%;
-  
   }
-  .bg{
+  .bg {
     height: auto;
-   }
-  nav a{
+  }
+  nav a {
     display: block;
   }
-  button.tablinks{
+  button.tablinks {
     display: block;
     padding: 10px;
   }
-  .tab button{
+  .tab button {
     font-size: 20px;
   }
-  h3{
+  h3 {
     font-size: 22px;
   }
-  .mbtxt{
+  .mbtxt {
     font-size: 18px;
   }
 }
 
-
 /* Medium device - Min from value and above. */
 @media only screen and (max-width: 600px) {
-.hidetxt{
-	display:block;
-	}
-  .mainTxt{
-    margin:20% 0 15% 5%;
+  .hidetxt {
+    display: block;
+  }
+  .mainTxt {
+    margin: 20% 0 15% 5%;
     padding: 5% 0 5% 5%;
   }
- .bg{
-  height: auto;
- }
- nav a{
-  display: block;
+  .bg {
+    height: auto;
+  }
+  nav a {
+    display: block;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .mbtxt {
+    font-size: 22px;
+  }
 }
-h3{
-  font-size: 24px;
-}
-.mbtxt{
-  font-size: 22px;
-}
-} 
 
 /* Large device */
 @media only screen and (max-width: 1024px) {
-  .hidetxt{
-    display:block;
-    }
-  } 
-
+  .hidetxt {
+    display: block;
+  }
+}
