@@ -7,13 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel=icon href="img/favicon.png" sizes="16x16" type="image/png">
-	<!--Light Box Code-->
-	<link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
-	<script src="lightbox2-master/src/js/lightbox.js"></script>
-	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
 
 	<!--- Tab Code -->
 	<script src="js/main.js"></script>
+	<!--- Image gallery modal -->
+	<script src="js/imageModal.js" defer></script>
 </head>
 
 <body onload="myScript()">
@@ -21,7 +19,7 @@
 
 		<div class="mainTxt">
 			<h1>Kristen Gilles</h1>
-			<h1>Marketing technologist</h1>
+			<h1 class="subTxt">Marketing technologist</h1>
 		</div>
 
 	</header>
@@ -35,9 +33,11 @@
 	<section class="mainContent">
 		<!-- Email examples, Web Banner signage -->
 
+		<img src="img/ProfileImg.jpg" class="leftImg" alt="profile picture">
+
 		<div class="rightText">
 			<a name="about"></a>
-			<h3>Hi, my name is Kristen: </h3>
+			<h3 class="bioHeading">Hi, my name is Kristen: </h3>
 			<p class="mbtxt">
 				I'm a marketing technologist who thinks in systems, not just how a campaign gets executed, but why a
 				data model breaks, where a customer journey falls apart, and what the technology needs to do to support
@@ -54,8 +54,6 @@
 
 
 		</div>
-
-		<img src="img/ProfileImg.jpg" class="leftImg" alt="profile picture">
 	</section>
 
 	<section class="blueBox">
@@ -75,11 +73,11 @@
 			<div id="Email" class="tabcontent">
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/PostCruise_3days_Desktop.png"
-							data-lightbox="example-20">
+						<a class="gallery-link" href="img/PostCruise_3days_Desktop.png"
+							data-gallery="example-20">
 							<img class="boxImg" src="img/Post_Cruise_Portfolio.png" alt=""></a>
-						<a class="example-image-link" href="img/PostCruise_3days_Mobile.png"
-							data-lightbox="example-20"></a>
+						<a class="gallery-link" href="img/PostCruise_3days_Mobile.png"
+							data-gallery="example-20"></a>
 						<h4 class="hidetxt">Post Cruise Nudge email</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank"
@@ -89,11 +87,11 @@
 				</div>
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/FeatureUpdateNews_Desktop.png"
-							data-lightbox="example-22">
+						<a class="gallery-link" href="img/FeatureUpdateNews_Desktop.png"
+							data-gallery="example-22">
 							<img class="boxImg" src="img/FeatureUpdateNews_Portfolio.png" alt=""></a>
-						<a class="example-image-link" href="img/FeatureUpdateNews_Mobile.png"
-							data-lightbox="example-22"></a>
+						<a class="gallery-link" href="img/FeatureUpdateNews_Mobile.png"
+							data-gallery="example-22"></a>
 						<h4 class="hidetxt">Newsletter about New Features for Record My Cruise</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank"
@@ -104,9 +102,9 @@
 				</div>
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/TheFreshBasket.png" data-lightbox="example-18">
+						<a class="gallery-link" href="img/TheFreshBasket.png" data-gallery="example-18">
 							<img class="boxImg" src="img/TheFreshBasket.png" alt=""></a>
-						<a class="example-image-link" href="img/TheFreshBasket_2.PNG" data-lightbox="example-18"></a>
+						<a class="gallery-link" href="img/TheFreshBasket_2.PNG" data-gallery="example-18"></a>
 						<h4 class="hidetxt">The Fresh Basket Marketing</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank"
@@ -117,9 +115,9 @@
 
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/WineNight.png" data-lightbox="example-19">
+						<a class="gallery-link" href="img/WineNight.png" data-gallery="example-19">
 							<img class="boxImg" src="img/WineNight.png" alt=""></a>
-						<a class="example-image-link" href="img/WineNight_2.png" data-lightbox="example-19"></a>
+						<a class="gallery-link" href="img/WineNight_2.png" data-gallery="example-19"></a>
 						<h4 class="hidetxt">Wine&Paint Not&#128396; Event</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank" href="https://pauleykr.github.io/Email/WineNight">View
@@ -129,9 +127,9 @@
 				</div>
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/Email_p1.png" data-lightbox="example-16">
+						<a class="gallery-link" href="img/Email_p1.png" data-gallery="example-16">
 							<img class="boxImg" src="img/Email_p1.png" alt=""></a>
-						<a class="example-image-link" href="img/Email_p2.png" data-lightbox="example-16"></a>
+						<a class="gallery-link" href="img/Email_p2.png" data-gallery="example-16"></a>
 						<h4 class="hidetxt">Horticultural Home 🌿 Newsletter</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank"
@@ -141,9 +139,9 @@
 				</div>
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/TakeAHike.png" data-lightbox="example-17">
+						<a class="gallery-link" href="img/TakeAHike.png" data-gallery="example-17">
 							<img class="boxImg" src="img/TakeAHike.png" alt=""></a>
-						<a class="example-image-link" href="img/TakeAHike_2.png" data-lightbox="example-17"></a>
+						<a class="gallery-link" href="img/TakeAHike_2.png" data-gallery="example-17"></a>
 						<h4 class="hidetxt">Take-a-Hike! Newsletter</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank"
@@ -153,7 +151,7 @@
 				</div>
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/portfolio_email.png" data-lightbox="example-7">
+						<a class="gallery-link" href="img/portfolio_email.png" data-gallery="example-7">
 							<img class="boxImg" src="img/portfolio_email.png" alt="Portfolio Email"></a>
 
 						<h4 class="hidetxt">Portfolio Email</h4>
@@ -165,9 +163,9 @@
 				</div>
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/MidCruise_Desktop.png" data-lightbox="example-21">
+						<a class="gallery-link" href="img/MidCruise_Desktop.png" data-gallery="example-21">
 							<img class="boxImg" src="img/MidCruise_Portfolio.png" alt=""></a>
-						<a class="example-image-link" href="img/MidCruise_Mobile.png" data-lightbox="example-21"></a>
+						<a class="gallery-link" href="img/MidCruise_Mobile.png" data-gallery="example-21"></a>
 						<h4 class="hidetxt">Nudge email for Record My Cruise</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" target="_blank" href="https://pauleykr.github.io/Email/MidCruise">View
@@ -180,9 +178,8 @@
 			<div id="PersonalWebsites" class="tabcontent">
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/unicoder.png" data-lightbox="example-11">
+						<a class="gallery-link" href="img/unicoder.png" data-gallery="example-11">
 							<img class="boxImg" src="img/unicoder.png" alt=""></a>
-						<a class="example-image-link" href="img/unicoder.png" data-lightbox="example-11"></a>
 						<h4 class="hidetxt">Unicoder</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" href="https://pauleykr.github.io/Unicoder/" target="_blank">View Site
@@ -193,10 +190,10 @@
 				<div class="txtBlockR">
 					<div class="blockStyles">
 
-						<a class="example-image-link" href="img/SplashCash_1.png" data-lightbox="example-15">
+						<a class="gallery-link" href="img/SplashCash_1.png" data-gallery="example-15">
 							<img class="boxImg" src="img/SplashCash_1.png" alt=""></a>
-						<a class="example-image-link" href="img/splashcash.png" data-lightbox="example-15"></a>
-						<a class="example-image-link" href="img/SplashCashemail.png" data-lightbox="example-15"></a>
+						<a class="gallery-link" href="img/splashcash.png" data-gallery="example-15"></a>
+						<a class="gallery-link" href="img/SplashCashemail.png" data-gallery="example-15"></a>
 
 						<h4 class="hidetxt">Splash Cash: Marketing promotion</h4>
 						<p class="pBox hidetxt">
@@ -208,7 +205,7 @@
 
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/tictac.png" data-lightbox="example-8">
+						<a class="gallery-link" href="img/tictac.png" data-gallery="example-8">
 							<img class="boxImg" src="img/tictac.png" alt=""></a>
 						<h4 class="hidetxt">Tic Tac Toe</h4>
 						<p class="pBox hidetxt">
@@ -220,9 +217,9 @@
 
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/GhostZap-1.png" data-lightbox="example-9">
+						<a class="gallery-link" href="img/GhostZap-1.png" data-gallery="example-9">
 							<img class="boxImg" src="img/GhostZap-1.png" alt=""></a>
-						<a class="example-image-link" href="img/GhostZap-2.png" data-lightbox="example-9"></a>
+						<a class="gallery-link" href="img/GhostZap-2.png" data-gallery="example-9"></a>
 						<h4 class="hidetxt">Ghost in the Machine</h4>
 						<p class="pBox hidetxt">
 							<a class="linkStyle" href="https://pauleykr.github.io/ZapAGhost/index" target="_blank">View
@@ -237,14 +234,14 @@
 			<div id="WordPress" class="tabcontent">
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/advLaser-1.jpg" data-lightbox="example-1">
+						<a class="gallery-link" href="img/advLaser-1.jpg" data-gallery="example-1">
 							<img class="boxImg" src="img/advLaser-1.jpg" alt=""></a>
-						<a class="example-image-link" href="img/advLaser-2.jpg" data-lightbox="example-1"></a>
-						<a class="example-image-link" href="img/advLaser-3.jpg" data-lightbox="example-1"></a>
-						<a class="example-image-link" href="img/advLaser-4.jpg" data-lightbox="example-1"></a>
-						<a class="example-image-link" href="img/advLaser-5.jpg" data-lightbox="example-1"></a>
-						<a class="example-image-link" href="img/advLaser-6.jpg" data-lightbox="example-1"></a>
-						<a class="example-image-link" href="img/advLaser-7.jpg" data-lightbox="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-2.jpg" data-gallery="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-3.jpg" data-gallery="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-4.jpg" data-gallery="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-5.jpg" data-gallery="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-6.jpg" data-gallery="example-1"></a>
+						<a class="gallery-link" href="img/advLaser-7.jpg" data-gallery="example-1"></a>
 
 						<h4 class="hidetxt">Advanced Medical Laser Center</h4>
 						<p class="pBox hidetxt">
@@ -255,10 +252,10 @@
 				</div>
 				<div class="txtBlockR">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/Hyperdrive-1.png" data-lightbox="example-2">
+						<a class="gallery-link" href="img/Hyperdrive-1.png" data-gallery="example-2">
 							<img class="boxImg" src="img/Hyperdrive-1.png" alt=""></a>
-						<a class="example-image-link" href="img/Hyperdrive-2.png" data-lightbox="example-2"></a>
-						<a class="example-image-link" href="img/Hyperdrive-3.png" data-lightbox="example-2"></a>
+						<a class="gallery-link" href="img/Hyperdrive-2.png" data-gallery="example-2"></a>
+						<a class="gallery-link" href="img/Hyperdrive-3.png" data-gallery="example-2"></a>
 						<h4 class="hidetxt">Hyperdrive Agile</h4>
 						<p class="pBox hidetxt">
 							&nbsp;
@@ -267,9 +264,9 @@
 				</div>
 				<div class="txtBlockL">
 					<div class="blockStyles">
-						<a class="example-image-link" href="img/AgileCamp-1.png" data-lightbox="example-3">
+						<a class="gallery-link" href="img/AgileCamp-1.png" data-gallery="example-3">
 							<img class="boxImg" src="img/AgileCamp-1.png" alt=""></a>
-						<a class="example-image-link" href="img/AgileCamp-2.png" data-lightbox="example-3"></a>
+						<a class="gallery-link" href="img/AgileCamp-2.png" data-gallery="example-3"></a>
 
 						<h4 class="hidetxt">agilecamp</h4>
 						<p class="pBox hidetxt">
@@ -291,6 +288,23 @@
 	<footer name="contact">Designed By: Kristen Gilles | <a href="mailto:pauleykr@gmail.com">pauleykr@gmail</a> | <img
 			src="img/githubicon.png" class="icon" alt="icon"><a href="https://github.com/pauleykr"
 			target="_blank">Github</a></footer>
+
+	<div id="imgModal" class="img-modal" hidden>
+		<div class="img-modal-backdrop" data-close></div>
+		<div class="img-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="imgModalTitle">
+			<button type="button" class="img-modal-close" data-close aria-label="Close">&times;</button>
+			<div class="img-modal-imgwrap">
+				<button type="button" class="img-modal-nav img-modal-prev" aria-label="Previous image">&#10094;</button>
+				<img class="img-modal-img" src="" alt="">
+				<button type="button" class="img-modal-nav img-modal-next" aria-label="Next image">&#10095;</button>
+				<p class="img-modal-count"></p>
+			</div>
+			<div class="img-modal-info">
+				<h4 id="imgModalTitle" class="img-modal-title"></h4>
+				<div class="img-modal-desc"></div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

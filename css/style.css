@@ -48,10 +48,18 @@ h4 {
   margin: 20% 0 25% 45%;
   padding: 5% 0 5% 5%;
   background-color: rgba(0, 0, 0, 0.8);
+  border-left: 4px solid #95c1c9;
+  border-top: 4px solid #8472a5;
+  border-bottom: 4px solid #312d61;
 }
 .mainTxt h1 {
   font-size: 2.5em;
   color: #fff;
+}
+.mainTxt h1.subTxt {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #95c1c9;
 }
 
 /* Section Body Content*/
@@ -68,9 +76,9 @@ h4 {
 .rightText {
   font-size: 1.5em;
   float: right;
-  width: 30%;
+  width: 48%;
   text-align: left;
-  margin: 5% 20% 5% 0;
+  margin: 5% 10% 5% 0;
 }
 
 .leftImg {
@@ -91,13 +99,15 @@ ul {
 }
 /*Nav Styles*/
 nav {
-  background: #000000;
+  background: #312d61;
   padding: 0;
   margin: 0;
   display: block;
   text-align: center;
+  border-top: 4px solid #8472a5;
 }
 nav a {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
   margin: 0 1em 0 1em;
@@ -106,13 +116,23 @@ nav a {
   display: inline-block;
 }
 
+nav a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  right: -1em;
+  width: 2px;
+  background: linear-gradient(180deg, #95c1c9, #8472a5, #312d61);
+}
+
 nav a:hover {
-  background-color: #fff;
-  color: #311a4b;
+  background-color: #8472a5;
+  color: #fff;
 }
 nav a:active {
-  background-color: #fff;
-  color: #311a4b;
+  background-color: #8472a5;
+  color: #fff;
 }
 .navAlign {
   text-align: center;
@@ -379,6 +399,18 @@ img {
   .text {
     font-size: 12px;
   }
+  .leftImg {
+    float: none;
+    display: block;
+    width: 60%;
+    max-width: 250px;
+    margin: 5% auto;
+  }
+  .rightText {
+    float: none;
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
   .txtBlockR {
     width: 100%;
     clear: float;
@@ -398,19 +430,54 @@ img {
   }
   nav a {
     display: block;
+    margin: 0;
+    padding: 14px;
+  }
+  nav a:not(:last-child)::after {
+    content: "";
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(90deg, #95c1c9, #8472a5, #312d61);
+  }
+  .tab {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tab button {
+    position: relative;
+    font-size: 18px;
   }
   button.tablinks {
     display: block;
-    padding: 10px;
+    width: 100%;
+    padding: 14px;
   }
-  .tab button {
-    font-size: 20px;
+  button.tablinks:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #95c1c9, #8472a5, #312d61);
+  }
+  .tab button.active {
+    border-left: 4px solid #95c1c9;
   }
   h3 {
     font-size: 22px;
   }
+  .bioHeading {
+    padding-left: 5%;
+  }
   .mbtxt {
     font-size: 18px;
+    padding-left: 5%;
   }
 }
 
@@ -428,6 +495,18 @@ img {
   }
   nav a {
     display: block;
+    margin: 0;
+    padding: 14px;
+  }
+  nav a:not(:last-child)::after {
+    content: "";
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(90deg, #95c1c9, #8472a5, #312d61);
   }
   h3 {
     font-size: 24px;
@@ -437,9 +516,170 @@ img {
   }
 }
 
+/* Tablet / large mobile */
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .tab button {
+    padding: 18px 30px;
+  }
+}
+
 /* Large device */
 @media only screen and (max-width: 1024px) {
   .hidetxt {
     display: block;
+  }
+}
+
+/* Image gallery modal */
+.img-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+}
+.img-modal:not([hidden]) {
+  display: flex;
+}
+.img-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(49, 26, 75, 0.85);
+}
+.img-modal-dialog {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  width: 1100px;
+  max-width: 92vw;
+  height: 80vh;
+  max-height: 90vh;
+  background: #1a1a1a;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
+    6px 4px 6px 1px #95c1c9,
+    -4px -1px 21px -5px #8472a5,
+    1px 1px 1px 1px rgba(0, 0, 0, 0);
+}
+.img-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 2;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: rgba(85, 66, 90, 0.75);
+  border: none;
+  font-size: 1.3em;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+}
+.img-modal-close:hover {
+  background: rgba(85, 66, 90, 0.95);
+}
+.img-modal-imgwrap {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.img-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  display: block;
+}
+.img-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(85, 66, 90, 0.55);
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+}
+.img-modal-prev {
+  left: 0;
+}
+.img-modal-next {
+  right: 0;
+}
+.img-modal-nav:hover {
+  background: rgba(85, 66, 90, 0.85);
+}
+.img-modal-count {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 0.85em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+.img-modal-info {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.75em;
+  text-align: left;
+  overflow-y: auto;
+  background: #1a1a1a;
+  border-left: 4px solid #8472a5;
+}
+.img-modal-title {
+  margin-top: 0;
+  padding-bottom: 0.5em;
+  padding-right: 2.5em;
+  margin-bottom: 0.75em;
+  border-bottom: 2px solid #95c1c9;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.img-modal-desc {
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+.img-modal-desc a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #95c1c9;
+  font-weight: 700;
+  text-decoration: underline;
+}
+body.img-modal-open {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-modal-dialog {
+    grid-template-columns: 100%;
+    grid-template-rows: 42% 1fr;
+    width: 92vw;
+    height: 90vh;
+    max-height: 90vh;
+  }
+  .img-modal-info {
+    overflow-y: auto;
+    border-left: none;
+    border-top: 4px solid #8472a5;
   }
 }
