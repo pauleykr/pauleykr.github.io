@@ -169,29 +169,12 @@ footer a {
 }
 
 /* Project Block stylings */
-.txtBlockL {
-  display: block;
-  float: left;
-  width: 49%;
-  padding: 1%;
-  margin: 0 0% 2% 0%;
-  -webkit-box-shadow:
-    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
-    6px 4px 6px 1px #95c1c9,
-    -4px -1px 21px -5px #8472a5,
-    1px 1px 1px 1px rgba(0, 0, 0, 0);
-  box-shadow:
-    3px -2px 3px 2px rgba(132, 114, 165, 0.5),
-    6px 4px 6px 1px #95c1c9,
-    -4px -1px 21px -5px #8472a5,
-    1px 1px 1px 1px rgba(0, 0, 0, 0);
-}
+.txtBlockL,
 .txtBlockR {
-  float: right;
   display: block;
-  width: 49%;
+  width: 100%;
   padding: 1%;
-  margin: 0 0% 2% 0%;
+  margin: 0 0 2% 0;
   -webkit-box-shadow:
     3px -2px 3px 2px rgba(132, 114, 165, 0.5),
     6px 4px 6px 1px #95c1c9,
@@ -252,6 +235,9 @@ Change background color of buttons on hover */
   padding: 6px 12px;
   border-top: none;
   margin: 0% 0% 0% 0%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+  align-items: start;
 }
 
 /* Slider styles*/
@@ -415,14 +401,12 @@ img {
     width: 100%;
     margin: 0 0 5% 0;
   }
-  .txtBlockR {
-    width: 100%;
-    clear: float;
-    margin-bottom: 32px;
+  .tabcontent {
+    grid-template-columns: 1fr;
   }
+  .txtBlockR,
   .txtBlockL {
     width: 100%;
-    clear: float;
     margin-bottom: 32px;
   }
   .mainTxt {

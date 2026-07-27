@@ -1,7 +1,7 @@
 //Show Email Tab be default (Can switch with other tabs)
 function myScript(){
 	var x = document.getElementById("Email");
-	x.style.display="block";
+	x.style.display="grid";
 	}
 //Highlights the button link and shows the related content
 function openWork(evt, workType) {
@@ -14,6 +14,6 @@ function openWork(evt, workType) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(workType).style.display = "block";
+    document.getElementById(workType).style.display = "grid";
     evt.currentTarget.className += " active";
 }
